@@ -13,7 +13,7 @@ export const authCredentials = {
 };
 
 export const authProvider: AuthProvider = {
-  login: async ({ email }) => {
+  login: async ({ email  }) => {
     try {
       const { data } = await dataProvider.custom({
         url: API_URL,
@@ -34,11 +34,10 @@ export const authProvider: AuthProvider = {
       });
 
       localStorage.setItem("access_token", data.login.accessToken);
-
-      return {
-        success: true,
-        redirectTo: "/",
-      };
+ return {
+    success: true,
+    redirectTo: "/",
+ };
     } catch (e) {
       const error = e as Error;
 
