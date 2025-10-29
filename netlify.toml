@@ -1,0 +1,5 @@
+[build]
+base ="Parent-dir/"
+publish = "build-output"
+[conetext.dev.environment]
+NODE_ENV =  "development"
