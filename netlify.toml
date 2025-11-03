@@ -1,5 +1,5 @@
 [build]
 command = "npm run build"
-base = "Parent-dir"
-publish = "Parent-dir/dist"
+
+publish = "dist"
 NODE_ENV =  "development"
