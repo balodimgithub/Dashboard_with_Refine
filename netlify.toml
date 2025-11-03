@@ -1,5 +1,5 @@
 [build]
-base ="Parent-dir/"
-publish = "Parent-dir/public"
-[context.dev.environment]
+base ="/Parent-dir"
+[context.production]
+publish = "dist/"
 NODE_ENV =  "development"
