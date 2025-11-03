@@ -44,7 +44,7 @@
   },
   "scripts": {
     "dev": "refine dev",
-    "build": "tsc && refine build",
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=4096 && refine build",
     "start": "refine start",
     "refine": "refine",
     "codegen": "graphql-codegen --config graphql.config.ts"

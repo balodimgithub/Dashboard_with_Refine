@@ -1,5 +1,5 @@
 [build]
-base ="/Parent-dir"
-[context.production]
-publish = "dist/"
+base ="Parent-dir"
+command = "npm run build"
+publish = "Parent-dir/dist"
 NODE_ENV =  "development"
